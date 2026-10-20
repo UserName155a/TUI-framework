@@ -1,27 +1,13 @@
 # Text based RPG-type app
+import sys
+import curses
+from curses import wrapper
 
+def main(window):                       #window defines the task/window
+    window.clear()
+    for i in range(0,11):
+        window.addstr(i,0,str("Hello")) #print() but more control over where it goes
+        window.refresh()                #refresh screen, not neaded if you want instantanous anyways
+    window.getkey()                     #listins to keystrokes
 
-from textual.app import App, ComposeResult, RenderResult
-from textual.widget import Widget
-from textual.binding import Binding
-
-class Hello(Widget):
-    def render(self) -> RenderResult:
-        return "Hello, [b]world[/b]"
-
-class Main(App):
-
-    BINDINGS = [
-        ("d","quit","exit app")
-        ]
-
-    def compose(self) -> ComposeResult:
-        yield Hello()
-
-    def on_mount(self) -> None: #right after launch
-        self.screen.styles.background = "black"
-        self.grid = []
-
-if __name__ == "__main__":
-    app = Main()
-    app.run()
+wrapper(main)
