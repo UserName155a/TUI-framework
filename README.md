@@ -51,4 +51,4 @@ How to play:
     <img src = ".readme/End.png">
 
     * Oop, seems like I lost, on the right it says so. It seems like the target was in the other direction!
-    * Now use the 'D' key to exit the game to run the script again and try again
+    * Now use the 'D' key to exit the game to run the script again and try again (if you want to of course!)
