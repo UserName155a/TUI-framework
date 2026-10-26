@@ -1,8 +1,14 @@
-# Target-game
+# Target-game-by-typ
 
 <img src ="/.readme/MainSc.png">
 
 Project for Hack Club Terra
+
+Game inspired by Metal-Detectors, Satellite GPS Systems, and maybe a little of the battleship board game
+
+No future updates will be expected for this project
+
+
 
 How to install:
 
@@ -23,6 +29,7 @@ How to play:
         * Down Arrow: Move down
     * Spacebar: Plant flag/comfirm guess
     * D key: Exit script
+
 * Gameplay
     * Fullscreen your terminal window (else it will clip over itself)
     * Start the game by running it in terminal (Linux do ./main)
